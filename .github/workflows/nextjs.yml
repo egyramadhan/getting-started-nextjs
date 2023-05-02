@@ -81,6 +81,8 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
+       env:
+   REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
 
   # Deployment job
   deploy:
